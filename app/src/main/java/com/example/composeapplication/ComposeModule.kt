@@ -17,8 +17,10 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuBox
 import androidx.compose.material3.ExposedDropdownMenuBoxScope
 import androidx.compose.material3.ExposedDropdownMenuDefaults
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
+import androidx.compose.material3.rememberBottomSheetScaffoldState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
@@ -31,22 +33,6 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.composeapplication.ui.theme.ComposeApplicationTheme
-
-@Composable
-fun UiScreenKalkulator4() {
-    Box(
-        modifier = Modifier.fillMaxSize()
-    ) {
-        Row(
-            Modifier
-                .fillMaxWidth()
-                .align(Alignment.TopCenter),
-        ) {
-
-        }
-    }
-}
-
 
 @Composable
 fun UiScreen() {
@@ -105,27 +91,6 @@ fun UiScreen() {
             }
         }
     }
-}
-
-@Composable
-fun Exp() {
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Color.Cyan)
-    ) {
-        Column(
-
-            modifier = Modifier
-                .background(Color.Green)
-                .align(Alignment.BottomCenter)
-        ) {
-            Text(
-                text = "asadassad",
-            )
-        }
-    }
-
 }
 
 @Preview

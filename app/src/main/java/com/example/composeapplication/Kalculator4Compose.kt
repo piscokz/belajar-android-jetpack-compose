@@ -38,6 +38,6 @@ class Kalculator4Compose : ComponentActivity() {
 @Composable
 fun Preview() {
     ComposeApplicationTheme {
-        UiScreenKalkulator4()
+
     }
 }
