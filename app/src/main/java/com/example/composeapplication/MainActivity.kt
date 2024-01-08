@@ -33,47 +33,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             ComposeApplicationTheme {
-                var name by remember { mutableStateOf("") }
-                var names by remember { mutableStateOf(listOf<String>()) }
 
-                Column(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .padding(16.dp)
-                ) {
-                    Row(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                    ) {
-                        OutlinedTextField(
-                            value = name,
-                            onValueChange = { text ->
-                                name = text
-                            },
-                            modifier = Modifier.weight(1f)
-                        )
-                        Spacer(modifier = Modifier.width(15.dp))
-                        Button(onClick = {
-                            if (name.isNotBlank()) {
-                                names = names + name
-                                name = ""
-                            }
-                        }) {
-                            Text(text = "Add")
-                        }
-                    }
-                    LazyColumn {
-                        items(names) { currentName ->
-                            Text(
-                                text = currentName,
-                                modifier = Modifier
-                                    .fillMaxWidth()
-                                    .padding(15.dp)
-                            )
-                            Divider()
-                        }
-                    }
-                }
             }
         }
     }

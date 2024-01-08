@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Compose Application"
+rootProject.name = "Belajar Android Jetpack Compose"
 include(":app")
  
